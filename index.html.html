@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdbcc",
+                    "inverse-surface": "#34302c",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#ffb4a6",
+                    "inverse-primary": "#ffb4a6",
+                    "on-primary-container": "#ffb7aa",
+                    "secondary-container": "#fd7729",
+                    "surface-container": "#f5ece7",
+                    "on-surface-variant": "#59413c",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fff8f5",
+                    "on-secondary-fixed-variant": "#7a3000",
+                    "primary": "#7e0900",
+                    "tertiary": "#523800",
+                    "surface-dim": "#e1d8d4",
+                    "tertiary-fixed": "#ffdea9",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#6f4e00",
+                    "surface-container-high": "#efe6e2",
+                    "background": "#fff8f5",
+                    "outline": "#8d706b",
+                    "secondary": "#a04100",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#351000",
+                    "on-surface": "#1e1b18",
+                    "secondary-fixed-dim": "#ffb693",
+                    "on-secondary-container": "#5e2300",
+                    "primary-fixed": "#ffdad4",
+                    "inverse-on-surface": "#f8efea",
+                    "on-background": "#1e1b18",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#400200",
+                    "surface-container-low": "#fbf2ed",
+                    "primary-container": "#a12312",
+                    "on-tertiary-fixed-variant": "#5e4100",
+                    "on-tertiary-container": "#ffbd37",
+                    "surface-tint": "#b02e1c",
+                    "surface": "#fff8f5",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#e1bfb9",
+                    "on-tertiary-fixed": "#271900",
+                    "on-primary-fixed-variant": "#8e1405",
+                    "tertiary-fixed-dim": "#ffba27",
+                    "surface-container-highest": "#e9e1dc",
+                    "surface-variant": "#e9e1dc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "lg": "48px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "margin-mobile": "16px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-sm": ["Vollkorn"],
+                    "headline-md": ["Vollkorn"],
+                    "display-lg-mobile": ["Vollkorn"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "display-lg": ["Vollkorn"],
+                    "caption": ["Be Vietnam Pro"],
+                    "label-md": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased">
+<!-- Shared Component: TopAppBar + Login Form Section -->
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
+<div class="flex items-center bg-[#fcf9f8] p-4 pb-2 justify-between">
+<div class="text-[#1b0f0e] flex size-12 shrink-0 items-center" data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewbox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</div>
+<h2 class="text-[#1b0f0e] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">La Sazón de Nicolaza</h2>
+</div>
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-[#fcf9f8] @[480px]:rounded-lg min-h-80" data-alt="A warm and inviting rustic kitchen scene in Peru featuring a traditional clay oven and ceramic pots. The lighting is soft and golden, suggesting a late afternoon glow. In the center, a perfectly plated dish of Lomo Saltado sits on a hand-woven textile runner. The colors are dominated by earthy reds, warm creams, and vibrant marigold accents, reflecting a high-quality culinary brand identity." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHbZc-rD6GIU5gqbQc4tTt78KAPchllVL6UOErZqQ4Tkih1Q2UXUoXml1gw2o-ZR08QCTvzaXWCYXKFs7gUsVghnAqsFbgv7yJIkLL92DcyS_g-p-4wr5RkmnD_BtBjo5DxMzmJqtLmAIu6qQ1X_-fmHfUw9xtZXw1p8xaSgcB5LjOIZCV466htPpCIWp2_uF5YUSmelL9mdw4LnMsK_1GWfK34IsNRFkrKGhv9nztkK2dK-sHwFuLZ75DuaSg2D9atGGPlcALiaCR");'></div>
+</div>
+</div>
+<h2 class="text-[#1b0f0e] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5 font-headline-md">Welcome back</h2>
+<div class="flex max-w-[480px] flex-col gap-0 px-4 mx-auto">
+<div class="flex flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#1b0f0e] text-base font-medium leading-normal pb-2 text-center">Correo electrónico</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1b0f0e] focus:outline-0 focus:ring-2 focus:ring-primary border border-[#e7d3d0] bg-[#fcf9f8] focus:border-primary h-14 placeholder:text-[#97574e] p-[15px] text-base font-normal leading-normal" placeholder="ejemplo@correo.com" value=""/>
+</label>
+</div>
+<div class="flex flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#1b0f0e] text-base font-medium leading-normal pb-2 text-center">Contraseña</p>
+<div class="flex w-full flex-1 items-stretch rounded-lg">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1b0f0e] focus:outline-0 focus:ring-0 border border-[#e7d3d0] bg-[#fcf9f8] focus:border-[#e7d3d0] h-14 placeholder:text-[#97574e] p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal" placeholder="••••••••" type="password" value=""/>
+<div class="text-[#97574e] flex border border-[#e7d3d0] bg-[#fcf9f8] items-center justify-center pr-[15px] rounded-r-lg border-l-0" data-icon="Eye" data-size="24px" data-weight="regular">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Forgot Password Link -->
+<div class="flex pt-1 pb-4 justify-center">
+<a class="text-secondary font-label-md hover:underline decoration-2 underline-offset-4" href="#">¿Olvidaste tu contraseña?</a>
+</div>
+<!-- Main CTA -->
+<div class="flex flex-col gap-4 pt-2 items-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary-container text-on-primary text-base font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary">
+<span class="truncate">Iniciar Sesión</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="flex items-center gap-4 py-8">
+<div class="h-[1px] flex-1 bg-outline-variant"></div>
+<p class="text-on-surface-variant font-label-md text-xs uppercase tracking-widest">O continúa con</p>
+<div class="h-[1px] flex-1 bg-outline-variant"></div>
+</div>
+<!-- Social Logins -->
+<div class="flex flex-col gap-3 pb-8 items-center">
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl h-14 px-5 border border-outline text-on-surface text-base font-semibold leading-normal hover:bg-surface-container transition-colors">
+<svg class="size-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z" fill="#EA4335"></path>
+</svg>
+<span>Google</span>
+</button>
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl h-14 px-5 border border-outline text-on-surface text-base font-semibold leading-normal hover:bg-surface-container transition-colors">
+<svg class="size-6 text-[#1877F2]" fill="currentColor" viewbox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+</svg>
+<span>Facebook</span>
+</button>
+</div>
+<!-- Footer Sign Up -->
+<div class="flex justify-center pb-12">
+<p class="text-on-surface-variant font-body-md">
+                    ¿No tienes una cuenta? 
+                    <a class="text-primary font-bold hover:underline" href="#">Regístrate</a>
+</p>
+</div>
+</div>
+<div class="h-5 bg-[#fcf9f8]"></div>
+</div>
+</body></html>
